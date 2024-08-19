@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>221FA04302</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+            #contact {
+                text-align: center;
+                margin-top: 50px;
+            }
+  
+            .contact-box {
+                border: 2px solid #000;
+                padding: 20px;
+                display: inline-block;
+                border-radius: 0; /* sharp edges */
+                background-color: #f5f5f5;
+            }
+  
+            .contact-box a {
+                color: #0000ff;
+                text-decoration: none;
+            }
+            
+            .contact-box a:hover {
+                text-decoration: underline;
+            }
+                    /* Skills Section */
+                    #projects {
+                        margin-top: 50px; /* Space above Projects section */
+                        text-align: center;
+                    }
+
+                /* Skills Section */
+            /* Skills Section */
+            /* Skills Section */
+            .skills-section {
+            /* Overall styling for the section */
+            background-color: #f0f0f0;
+            padding: 20px;
+            }
+
+            .skills-list {
+            /* Styling for the list of skills */
+            list-style: none;
+            padding: 0;
+            }
+
+            .skill-item {
+            /* Styling for each individual skill item */
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            }
+
+            .skill-name {
+            /* Styling for the skill name */
+            font-weight: bold;
+            }
+
+            .skill-progress {
+            /* Styling for the skill progress bar or indicator */
+            width: 80%;
+            height: 10px;
+            background-color: #ddd;
+            }
+
+            .skill-progress-bar {
+            /* Styling for the filled part of the progress bar */
+            height: 100%;
+            background-color: #3498db;
+            }
+            .accordion {
+                width: 100%;
+                background-color: transparent; /* Ensure no additional background for accordion */
+                border: none; /* Remove any default border around accordion */
+                box-shadow: none; /* Remove any shadow around accordion */
+            }
+
+            .accordion-item {
+                margin-bottom: 15px;
+            }
+
+            .accordion-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                padding: 10px 15px;
+                background-color: #f4f4f4;
+                border-radius: 5px;
+                border: none; /* Ensure no border around accordion header */
+                transition: background-color 0.3s ease;
+            }
+
+            .accordion-header:hover {
+                background-color: #e0e0e0;
+            }
+
+            .caret-icon {
+                color: #6c63ff;
+                transition: transform 0.3s ease;
+            }
+
+            .accordion-content {
+                padding: 10px 20px;
+                display: none;
+                text-align: left;
+                background-color: transparent; /* Ensure the content background is clear */
+                border: none; /* No border around accordion content */
+            }
+
+            .accordion-content ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            .accordion-content li {
+                padding: 5px 0;
+            }
+
+            .accordion-header.active .caret-icon {
+                transform: rotate(180deg);
+            }
+
+            @media (max-width: 768px) {
+                #skills {
+                    width: 90%;
+                }
+            }
+            .about h2 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+            }
+    
+            .about p {
+                font-size: 1.2em;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+    
+            .about-stats {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+            img
+            {  
+                width:200px;
+            }
+            .stat {
+                text-align: center;
+            }
+    
+            .stat h3 {
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
+    
+            .stat p {
+                font-size: 1.1em;
+            }
+    
+            .download-cv {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #007bff; /* Button background color */
+                color: #fff; /* Button text color */
+                text-decoration: none;
+                border-radius: 5px; /* Rounded corners for the button */
+                font-size: 1.1em;
+            }
+    
+            .download-cv:hover {
+                background-color: #0056b3; /* Darker background on hover */
+            }
+            body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            }
+
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 0;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+            section {
+            padding: 50px;
+            margin: 0;
+            }
+
+            #home {
+                background-color: #f4f4f4;
+            }
+
+            #about-me {
+                background-color: #e2e2e2;
+            }
+            #footer {
+            background-color: #778899;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            }
+
+            .footer-icons {
+                font-size: 24px;
+                margin: 0 10px;
+                color: black;
+                text-decoration: none;
+            }
+
+            .footer-icons:hover {
+                color: #778899;
+            }
+
+            #footer {
+                position: fixed;
+                top: 640px;
+                height: 30px;
+                width: 100%;
+            }
+    </style>
+        <body>
+            <center>
+                <h1>My Portfolio</h1>
+            </center>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#Contact-me">Contact-me</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="Home" style="font-family: Arial, Helvetica, sans-serif;">
+                <center>
+                    <h1>Hi,I'm Pallavi</h1>
+                    <pre style="font-family: Arial, Helvetica, sans-serif;">
+                        <h3>Computer science engineering</h3>
+                            A Third - year undergraduate engineering <br>
+                            student at Vignan University , Guntur.
+                    </pre>
+                </center>
+            </section>
+            <section class="about">
+                <div class="about-content">
+                    <div class="about-text">
+                        <center>
+                            <div class="img">
+                                <img src="https://images.statusfacebook.com/profile_pictures/cute_girls/cute_girls_dps_profile_pictures_fb_whatsapp_139.jpg" alt="Your Image" class="about-me-image">
+                            </div>
+                        </center>
+                        <center>
+                            <h2>About Me<br></h2>
+                            <h3>My introduction</h3>
+                            <pre style="font-family: Arial, Helvetica, sans-serif;">
+                                I'm a Third-year undergraduate passionate about technology and an avid reader. 
+                                I have a self-motivated and can-do attitude, thriving in challenging
+                                dynamic environments. Seeking a competitive position to enhance my skills 
+                                and contribute to a professional organization. I'm very much passionate to learn
+                                new stuff interests me and can help me to get better.
+                            </pre>
+                        </center>
+                    <br>
+                    <br>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>07.21</h3>
+                            <p>Aggregate CGPA</p>
+                        </div>
+                        <div class="stat">
+                            <h3>04+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>02+</h3>
+                            <p>Months Experience</p>
+                        </div>
+                    </div>
+                    <a href="your-cv-link.pdf" class="download-cv" download>Download CV</a>
+                </div>
+            </section>
+    
+            <section id="skills"><center>
+                <h2 class="skills-title">Skills</h2>
+                <p class="skills-subtitle">My technical level</p>
+        
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>Programming Languages</span>
+                            <i class="caret-icon">⌄</i> <!-- Arrow Symbol -->
+                        </div>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Technologies</span>
+                        <i class="caret-icon">⌄</i> <!-- Arrow Symbol -->
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Git</li>
+                            <li>MY SQL</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>IT Constructs</span>
+                        <i class="caret-icon">⌄</i> <!-- Arrow Symbol -->
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>DBMS</li>
+                            <li>DS & Algorithms</li>
+                            <li>OOP</li>
+                            <li>OS</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <center>
+                <h2 class="TIC-TOE GAME">Projects</h2><start></start>
+                <div class="projects-container">
+                    <div class="project-item" data-image="project1.jpg">
+                        <a href="https://r.search.yahoo.com/_ylt=Awr1TeMKxMFmlQQATx.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1725184267/RO=10/RU=https%3a%2f%2fmausam.imd.gov.in%2f./RK=2/RS=81R8DmTEDewB1kwl3OlpPkmGcrw-.com">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.SMbQkF3w7fG5Ckd4iAnjKgAAAA&pid=Api&P=0&h=180" alt="Project 1">
+                        </a>
+                        <p>
+                            Tic-tac-toe is played on a <br>
+                            three-by-three grid by two players,<br>
+                             who alternately place the marks X and O <br>
+                             in one of the nine spaces in the grid.
+                        </p>
+                    </div>       
+                </div>
+            </center>
+                
+            <section id="Contact-me">    
+                <section id="contact">
+                    <h2>Contact Me</h2>
+                    <p>
+                      Feel free to reach out to me via email at:<br>
+                      <a href="mailto:pallavigairuboina@gmail.com">Email:pallavigairuboina@gmail.com</a><br>
+                      <a href="phone number">Phone number:9398968123</a>
+                    </p>
+                </section>
+            </section>
+            <div id="footer">
+                <a href="#" class="footer-icons"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer-icons"><i class="fab fa-google"></i></a>
+                <a href="#" class="footer-icons"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-icons"><i class="fab fa-github"></i></a>
+            </div>
+            <script>
+    
+                const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+                accordionHeaders.forEach(header => {
+                    header.addEventListener('click', () => {
+                        const content = header.nextElementSibling;
+            
+                        if (content.style.display === 'block') {
+                            content.style.display = 'none';
+                        } else {
+                            content.style.display = 'block';
+                        }
+            
+                        header.classList.toggle('active'); // To toggle the active class for rotating the arrow
+                    });
+                });
+            </script>
+    </body>
+</html>
+                      
+                   
